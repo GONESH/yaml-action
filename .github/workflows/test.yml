@@ -8,6 +8,8 @@ jobs:
      - uses: actions/setup-node@v3
        with:
         node-version: 16
+     - name: Install node_modules
+       run: yarn
      - name: Build the project
        run: yarn build
      - name: Setup finish
